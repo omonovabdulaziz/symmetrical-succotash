@@ -11,7 +11,7 @@ import (
 
 func main() {
 	var baseHost string
-	flag.StringVar(&baseHost, "host", "tcp.jprq.io", "Base Host")
+	flag.StringVar(&baseHost, "host", "tcp.camelot-register.uz", "Base Host")
 	flag.Parse()
 
 	j := jprq_tcp.New(baseHost)
