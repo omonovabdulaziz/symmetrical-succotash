@@ -13,8 +13,8 @@ import (
 )
 
 var version = "1.0.0"
-var tcpBaseHost = "tcp.jprq.io"
-var httpBaseHost = "open.jprq.io"
+var tcpBaseHost = "158.220.111.34"
+var httpBaseHost = "158.220.111.34:4200"
 
 func main() {
 	subdomain := flag.String("subdomain", "", "Subdomain for HTTP Tunnel")
@@ -22,9 +22,9 @@ func main() {
 	log.SetFlags(0)
 
 	if len(os.Args) < 3 {
-		log.Fatalf("Usage: jprq <PROTOCOL> <PORT>\n" +
-			"  Supported Protocols: [tcp, http]\n" +
-			"  Optional Argument: -subdomain\n" +
+		log.Fatalf("Usage: jprq <PROTOCOL> <PORT>\n"+
+			"  Supported Protocols: [tcp, http]\n"+
+			"  Optional Argument: -subdomain\n"+
 			"  Client Version: %s\n", version)
 	}
 

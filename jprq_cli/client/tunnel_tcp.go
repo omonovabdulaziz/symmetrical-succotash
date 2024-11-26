@@ -49,7 +49,7 @@ func openTCPTunnel(port int, ctx context.Context) {
 
 	go handleTCPConnections(ws, connRequests)
 
-	out:
+out:
 	for {
 		select {
 		case <-ctx.Done():
